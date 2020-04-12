@@ -1,0 +1,129 @@
+body{
+  background-color: lightblue;
+}
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.nav-bar{
+  background-color: black;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-items{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 15%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#temp-button{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  margin: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.weatherCard{
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color:white;
+  display: inline-block;
+  padding: 30px;
+  box-shadow: 10px 10px grey;
+}
+.weatherCard:hover{
+  padding: 35px;
+}
+.cities{
+  cursor: pointer;
+}
+.citylist{
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 5px 5px grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 16px;
+}
+@media only screen and (max-width:780px){
+  .nav-items{
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width:500px){
+  .nav-bar{
+    justify-content: space-around;
+  }
+  .nav-items{
+    flex-direction: column;
+    margin-right: 15%;
+    font-size: 4vw;
+  }
+  #app-header{
+    font-size: 5vw;
+  }
+  .weatherCard{
+    width: 100%;
+   
+  }
+  .citylist{
+    flex-direction: column;
+    margin: 10%;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  }
+  .myCityHeader{
+    font-size: 5vw;
+  }
+}
+@media only screen and (max-width:230px){
+  .citylist{
+     font-size: 4vw;
+  }
+  .removeBtn{
+    font-size: 4vw;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
