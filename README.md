@@ -1,6 +1,5 @@
 # weather-app-react
-PROJECT live at : http://weatherapp-react.surge.sh/
-
+PROJECT live at : http://weather-appl-react.surge.sh/
 A simple weather app made using react hooks concept , to show weather for selected cities and change the units of temperature as required
 
 Add to my cities feature is also provided , to add a particular city with temperature on that date for reference.
